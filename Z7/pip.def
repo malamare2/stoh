@@ -1,0 +1,19 @@
+Bootstrap: docker
+From: ubuntu:22.04
+
+%post
+  
+  # Azuriranje OS-a
+  apt update -y
+  apt upgrade -y
+  
+  # Instalacija Pythona i pip modula
+  apt install -y python3-pip
+  
+  # Instalacija Python paketa
+  python3 -m pip install numpy scipy matplotlib
+
+
+
+
+
